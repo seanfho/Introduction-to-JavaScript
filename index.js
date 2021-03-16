@@ -242,9 +242,10 @@ Using the annoyingSong function below do the following:
 */
 
 function annoyingSong(num){
-        return `${num} bottles of soda on the wall, ${num} bottles of soda, take one down pass it around ${num-1} bottles of soda on the wall`
-      }
-
+    for(let i = num; i>=0; i -1){
+    return `${i} bottles of soda on the wall, ${i} bottles of soda, take one down pass it around ${i-1} bottles of soda on the wall`
+    }
+}
   console.log("Task 6:", annoyingSong(5));
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -306,10 +307,19 @@ Using the vowelCounter function below do the following:
 */
 
 
-function vowelCounter(/*add your code here*/) {
-    /*add your code here*/
+function vowelCounter(word) {
+    let vowel = ["a", "e", "i", "o", "u"];
+    let counter = 0;
+    word = word.toLowerCase();
+    for (let i = 0; i <=word.length; i++) {
+      if(vowel.includes(word[i]))
+      counter++;
+      }
+      return counter;
 }
 
+
+console.log(vowelCounter('Easter'));
 
 
 /*🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑 Please do not modify anything below this line 🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑*/

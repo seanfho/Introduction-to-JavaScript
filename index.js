@@ -318,9 +318,9 @@ function vowelCounter(word) {
       return counter;
 }
 
-
-console.log(vowelCounter('Easter'));
-
+console.log("Stretch Task Test1:",vowelCounter('Easter'));
+console.log("Stretch Task Test2:",vowelCounter('Sean Ho'));
+console.log("Stretch Task Test3:",vowelCounter('Lambda School is Awesome'));
 
 /*🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑 Please do not modify anything below this line 🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑*/
 function foo(){

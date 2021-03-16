@@ -18,7 +18,12 @@ Do the following:
    HINT: no function required
 */
 
+const votingAge = 18;
+let age = 28;
 
+if(age >= votingAge){
+  console.log("Task 1a:", true);
+}
 
 /*
 Task 1b - Values
@@ -31,9 +36,18 @@ Do the following:
    HINT: no function required
 */
 
+let var1 = -1;
+const var2 = 2;
 
+if(var1 < var2){
+  var1 = var1 * var2;
+}else if(var1 > var2){
+  var1 = var1 - var2;
+}else{
+  var1 = var1/var2;
+}
 
-
+console.log("Task 1b:", var1);
 
 /*
 Task 1c - Convert Strings to Numbers
@@ -46,8 +60,9 @@ Do the following:
    HINT: look up the Number method
 */
 
+let varString = "1999";
 
-
+console.log("Task 1c:", /*typeof*/ Number(varString));
 
 /*
 Task 1d - Multiply
@@ -136,11 +151,11 @@ Use the game function below to do the following:
 
 let computer = Math.random();
 if(computer <= 0.34){
-  computer = 'rock';
+  computer = "rock";
 }else if(computer <= 0.67){
-  computer = 'paper';
+  computer = "paper";
 }else if(computer > 0.67){
-  computer = 'scissors';
+  computer = "scissors";
 }
 console.log(computer);
 
@@ -148,16 +163,18 @@ function game(user, computer){
     /*add your code here*/
     if(user === computer){
       return `it's a tie`;
-    }else if(user === 'rock' && computer === 'scissors'){
+    }else if(user === "rock" && computer === "scissors"){
       return `you win!`;
-    }else if(user === 'paper' && computer === 'rock'){
+    }else if(user === "paper" && computer === "rock"){
       return `you win!`;
-    }else if(user === 'scissors' && computer === 'paper'){
+    }else if(user === "scissors" && computer === "paper"){
       return `you win!`
     }else{
       return `you lose!`
     }
 }
+
+console.log("Task 4:",game('rock', computer));
   
   
 

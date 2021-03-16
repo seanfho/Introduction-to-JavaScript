@@ -216,7 +216,6 @@ function miles(kilometers){
 console.log("Task 5a:", miles(1));
 
 
-
 //Task 5b - Feet to CM
 /*
 Using the feet function below do the following:
@@ -225,10 +224,11 @@ Using the feet function below do the following:
   3. Return number of feet
 */
 
-function feet(/*add your code here*/){
-    /*add your code here*/
+function feet(cm){
+    return cm / 30.48;
   }
- 
+
+console.log("Task 5b:", feet(160));
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
